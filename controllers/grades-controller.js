@@ -12,7 +12,7 @@ function setup(app, grades) {
     res.send('loaderio-97355a48d08652424ffe033c5cf3d460');
   });
 
-  app.get('/my-grades', function(req, res) {
+  app.get('/grades', function(req, res) {
     let model = { title: "My Grades", grades };
     res.render('my-grades', model);
   });
